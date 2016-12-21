@@ -1,0 +1,11 @@
+<template name='testScrollView'>
+    <scroll-view
+        class="{{className}}"
+        scroll-y=true
+        scroll-top='0'
+    >
+        <block wx:for="{{imageList}}" wx:key="{{key}}" wx:for-item="imageSrc">
+            <image src="{{imageSrc}}"></image>
+        </block>
+    </scroll-view>
+</template>

@@ -1,0 +1,5 @@
+<template name="card">
+    <view bindtap="go" data-url="{{url}}" class="{{className}}">
+        {{content}}
+    </view>
+</template>

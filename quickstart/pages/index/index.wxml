@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<import src="../templates/card.wxml"/>
+
+
+<view class="container">
+  <block wx:for="{{componentList}}" wx:for-index="idx" wx:for-item="item">
+    
+    <template is="card" data="{{className: 'card', content: item.name, url: item.url }}"/>
+  </block>
+
+  
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration
+
+
+</view>
