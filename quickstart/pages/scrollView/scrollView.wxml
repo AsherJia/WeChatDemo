@@ -1,3 +1,0 @@
-<import src="../templates/scrollView.wxml"/>
-
-<template is="testScrollView" data="{{className: 'scrollPanel', key:'123', imageList: imgUrls }}"/>

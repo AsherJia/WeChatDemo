@@ -2,7 +2,11 @@
    "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/scrollView/scrollView"
+    "pages/components/scrollView/scrollView",
+    "pages/components/swiperView/swiperView",
+    "pages/components/base/base",
+    "pages/components/form/form",
+    "pages/components/medium/medium"
   ],
   "window":{
     "navigationBarTextStyle": "white",

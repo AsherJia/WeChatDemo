@@ -1,3 +1,5 @@
+<template is="testScrollView" data="{{className: 'scrollPanel', key:'123', imageList: imgUrls }}"/>
+
 <template name='testScrollView'>
     <scroll-view
         class="{{className}}"
