@@ -1,5 +1,6 @@
 {
    "pages":[
+    "pages/components/TestRequest/TestRequest",
     "pages/index/index",
     "pages/logs/logs",
     "pages/components/scrollView/scrollView",
